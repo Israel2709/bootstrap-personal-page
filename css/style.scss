@@ -173,5 +173,5 @@ body{
         .project-item:nth-child(#{$i}) {
           background-image: url('https://picsum.photos/id/11#{$i}/500/')
         }
-      }
+    }
 }

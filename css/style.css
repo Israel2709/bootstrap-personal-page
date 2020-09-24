@@ -58,6 +58,9 @@ html {
 
 body {
   position: relative;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #home {
@@ -80,10 +83,20 @@ body {
   z-index: -1;
 }
 
+.nav-row .wrap-nav {
+  z-index: 1;
+}
+
 .nav-row .nav {
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   z-index: 9999;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  overflow: hidden;
 }
 
 .nav-row .nav .nav-img {
@@ -152,10 +165,10 @@ body {
   background-position: center;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: -webkit-filter .5s ease;
-  transition: -webkit-filter .5s ease;
-  transition: filter .5s ease;
-  transition: filter .5s ease, -webkit-filter .5s ease;
+  -webkit-transition: -webkit-filter .25s ease;
+  transition: -webkit-filter .25s ease;
+  transition: filter .25s ease;
+  transition: filter .25s ease, -webkit-filter .25s ease;
 }
 
 #portfolio .project-item .project-caption {
@@ -176,8 +189,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  -webkit-transition: top .5s ease;
-  transition: top .5s ease;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  opacity: 0;
 }
 
 #portfolio .project-item:after {
@@ -195,6 +212,7 @@ body {
 
 #portfolio .project-item:hover .project-caption {
   top: 0;
+  opacity: 1;
 }
 
 #portfolio .project-item:nth-child(1) {
@@ -223,5 +241,47 @@ body {
 
 #portfolio .project-item:nth-child(7) {
   background-image: url("https://picsum.photos/id/117/500/");
+}
+
+#contact h3 {
+  max-width: 600px;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .link-mail:hover {
+  color: #ddc13e;
+  text-decoration: none;
+  opacity: .7;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#contact .social-list {
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+#contact .social-list a {
+  padding: 1rem .5rem;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#contact .social-list a:hover {
+  color: #ddc13e;
 }
 /*# sourceMappingURL=style.css.map */

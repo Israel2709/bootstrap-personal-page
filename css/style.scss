@@ -1,7 +1,7 @@
-$light-orange:        #cd853f;
-$purple:            #8566b5;
-$gray:              #949697;
-$black:             #030408;
+$light-orange:         #ddc13e;
+$purple:               #8566b5;
+$gray:                 #949697;
+$black:                #030408;
 
 @keyframes bg-animation{
     0%{
@@ -94,6 +94,30 @@ body{
                 }
                 
             }
+        }
+    }
+}
+
+.skills-wrapper{
+    .skill{
+        i{
+            color:$purple;
+            text-align: center;
+            margin-right:.75rem;
+        }
+    }
+}
+
+.languages-wrapper{
+    progress {
+        border: none;
+        height: 10px;
+        background: $purple;
+        &::-webkit-progress-value {
+            background: $purple;
+        }
+        &::-webkit-progress-bar {
+            background: $gray;
         }
     }
 }

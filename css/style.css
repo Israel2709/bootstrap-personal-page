@@ -33,7 +33,7 @@
 }
 
 .text-light-orange {
-  color: #cd853f;
+  color: #ddc13e;
 }
 
 .text-gray {
@@ -115,5 +115,25 @@ body {
 .nav-row .nav .list-group .list-group-item:hover a {
   color: #8566b5;
   text-decoration: none;
+}
+
+.skills-wrapper .skill i {
+  color: #8566b5;
+  text-align: center;
+  margin-right: .75rem;
+}
+
+.languages-wrapper progress {
+  border: none;
+  height: 10px;
+  background: #8566b5;
+}
+
+.languages-wrapper progress::-webkit-progress-value {
+  background: #8566b5;
+}
+
+.languages-wrapper progress::-webkit-progress-bar {
+  background: #949697;
 }
 /*# sourceMappingURL=style.css.map */

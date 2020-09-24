@@ -44,6 +44,14 @@
   color: #8566b5;
 }
 
+.bg-gray {
+  background-color: #949697;
+}
+
+.bg-black {
+  background-color: #030408;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -72,13 +80,10 @@ body {
   z-index: -1;
 }
 
-.nav-row {
-  z-index: 9999;
-}
-
 .nav-row .nav {
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .nav-row .nav .nav-img {
@@ -135,5 +140,88 @@ body {
 
 .languages-wrapper progress::-webkit-progress-bar {
   background: #949697;
+}
+
+#portfolio .project-item {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 0 2rem 2rem 0;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter .5s ease;
+  transition: -webkit-filter .5s ease;
+  transition: filter .5s ease;
+  transition: filter .5s ease, -webkit-filter .5s ease;
+}
+
+#portfolio .project-item .project-caption {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -webkit-transition: top .5s ease;
+  transition: top .5s ease;
+}
+
+#portfolio .project-item:after {
+  content: "";
+  padding-top: 100%;
+  width: 100%;
+  display: block;
+}
+
+#portfolio .project-item:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#portfolio .project-item:hover .project-caption {
+  top: 0;
+}
+
+#portfolio .project-item:nth-child(1) {
+  background-image: url("https://picsum.photos/id/111/500/");
+}
+
+#portfolio .project-item:nth-child(2) {
+  background-image: url("https://picsum.photos/id/112/500/");
+}
+
+#portfolio .project-item:nth-child(3) {
+  background-image: url("https://picsum.photos/id/113/500/");
+}
+
+#portfolio .project-item:nth-child(4) {
+  background-image: url("https://picsum.photos/id/114/500/");
+}
+
+#portfolio .project-item:nth-child(5) {
+  background-image: url("https://picsum.photos/id/115/500/");
+}
+
+#portfolio .project-item:nth-child(6) {
+  background-image: url("https://picsum.photos/id/116/500/");
+}
+
+#portfolio .project-item:nth-child(7) {
+  background-image: url("https://picsum.photos/id/117/500/");
 }
 /*# sourceMappingURL=style.css.map */
